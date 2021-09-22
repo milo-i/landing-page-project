@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100400700&display=swap')
+
+
+$primary_color: #F88767
+$secondary_color: #BDE5E1
+$grey : #444
+$roboto_font : 'Roboto',sans-serif
+$width : 70%
+$mobile_width : 95%
+.half
+  width: 45%
+  @media only screen and (max-width:900px)
+    width: 100%
+
+.full
+  width: 100%
+
+body,html
+  font-family: $roboto_font
+
+header
+  width: 100vw
+  max-width: 100%
+  height: 350px
+  background-color: $secondary_color
+
+
+  @media(max-width:768px)
+    height: auto
+    padding-bottom: 100px
+
+  position: relative
+  padding-bottom: 15px
+
+  .top-line
+    width: 100%
+    height: 10px
+    background-color: $primary_color
+
+
+  .header-wrapper
+    width: $width
+    margin: auto
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+    @media(max-width:768px)
+      width: $mobile_width
+
+  h1
+    font-family: $roboto_font
+    font-weight: 700
+    font-size: 2.7vw
+    width: 50%
+    color: #666
+
+    @media(max-width:768px)
+      width: 100%
+      font-size: 7vw
+      margin-bottom: 5px
+
+  .download-resume
+    width: 50%
+    display: flex
+    align-items: center
+    justify-content: flex-end
+
+    @media(max-width:768px)
+      display: none
+
+
+    a
+      color: $primary_color
+      i
+        z-index: 5
+        position: relative
+        font-size: 1em
+        color: $primary_color
+        margin-left: 10px
+
+
+  .left-header-section
+    width: 50%
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+
+
+    img
+      width: 25%
+
+
+    .left-header-section-text
+      width: 70%
+
+      h3
+        color: $primary_color
+
+      p
+        font-weight: 100
+        color: #666
+        width: 90%
+
+    @media(max-width:768px)
+      width: 100%
+
+      .left-header-section-text
+        width: 100%
+
+        p
+          width: 100%
+          margin-left: 5px
+          font-size: 12px
+          margin-top: 5px
+
+        h3
+          margin-bottom: 4px
+          margin-left: 5px
+
+
+  .right-header-section
+    width: 40%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+
+    .contact-item
+      width: 50%
+
+
+      a
+        font-size: 13px
+        color: #666
+        font-weight: 100
+        margin-left: 10px
+        text-decoration: underline
+        width: calc(100% - 35px)
+
+
+      i
+        color: $primary_color
+        font-size: 25px
+        vertical-align: middle
+
+    @media(max-width:768px)
+      width: 100%
+      justify-content: center
+      .contact-item
+        width: 48%
+        text-align: left
+        margin: 25px 0px
+
+.details
+  width: 100vw
+  max-width: 100%
+  position: relative
+  margin-top: 100px
+
+  @media(max-width:768px)
+    margin-top: 25px
+
+  .details-wrapper
+    margin: auto
+    width: $width
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+    @media(max-width:768px)
+      width: $mobile_width
+
+    .details-title
+      display: flex
+      justify-content: flex-start
+      align-items: center
+
+      .line
+        height: 2px
+        background-color: $secondary_color
+        flex: 1
+
+      h2
+        padding-right: 15px
+        font-size: 2.2vw
+        color: $primary_color
+
+        @media(max-width:768px)
+          font-size: 6vw
+
+
+
+
+    .education
+      .education-inner
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        .exp-item
+          width: 45%
+          @media(max-width:768px)
+            width: 100%
+
+    .work-experience-inner
+      display: flex
+
+      justify-content: space-between
+      flex-wrap: wrap
+
+      .exp-item
+        width: 45%
+
+        @media(max-width:768px)
+          width: 100%
+
+      .responsabilites
+        min-height: 200px
+        i
+          color: $primary_color
+
+    .exp-item
+      display: flex
+      justify-content: space-between
+      align-items: flex-start
+      flex-wrap: wrap
+      h3
+        color: $grey
+        i
+          color: $primary_color
+
+
+
+      .timeperiod
+        width: 200px
+        height: 50px
+        background-color: #f2f2f2
+        text-align: center
+        color: $grey
+
+        i
+          margin-right: 2px
+
+      .exp-title
+        width: 100%
+        border-bottom: 2px solid #f2f2f2
+        padding-bottom: 10px
+
+      .exp-title-inner
+        width: 200px
+        height: 40px
+        line-height: 40px
+        background-color: $secondary_color
+        color: $grey
+        text-align: center
+        font-weight: 400
+        border-radius: 5px
+
+      .text
+        min-height: 200px
+        p
+          color: $grey
+          font-size: 1.1em
+
+
+    .interests
+      p
+        color: $grey
+        i
+          margin-right: 15px
+          color: $primary_color
+
+
+
+    .portfolio
+
+      .portfolio-elements
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+
+        .portfolio-element
+          width: 31%
+          height: 200px
+          margin: 10px 0px
+          border-radius: 8px
+
+        .portfolio-element:nth-child(2n+1)
+          background-color: $primary_color
+
+        .portfolio-element:nth-child(2n)
+          background-color: $secondary_color
+
+
+    .contact
+      .form-wrapper
+        form
+          width: 100%
+          display: flex
+          flex-wrap: wrap
+          justify-content: space-between
+
+          input, textarea
+            width: 46%
+            font-size: 1em
+            padding: 10px 5px
+            margin: 10px 0px
+            border-radius: 8px
+            border: none
+            background-color: #f2f2f2
+            color: $grey
+
+          textarea
+            height: 200px
+
+          .large-input
+            width: 100%
+
+          button
+            border: none
+            background-color: $secondary_color
+            padding: 10px
+            width: 100px
+            border-radius: 8px
+            color: $grey
+
+
+footer
+  width: 100vw
+  max-width: 100%
+  position: relative
+  height: 100px
+  background-color: $secondary_color
+  margin-top: 10px
+
+
+  .footer-inner
+    width: $width
+    display: flex
+    justify-content: space-between
+    position: absolute
+    bottom: 10px
+    left: 15vw
+    color: $grey
+    .right-footer
+      display: flex
+      justify-content: space-around
+      align-items: center
+      p
+        margin: 0px 15px
+        font-size: 1.4em
+        color: $primary_color
+
+    .left-footer
+      p
+        @media(max-width:768px)
+          font-size: 12px
